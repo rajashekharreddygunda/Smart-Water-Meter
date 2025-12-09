@@ -8,50 +8,41 @@ The system uses
 4. YF-S201 flow sensor
 5. Push Buttons
 
-"Key Features"
-🔹 Real-Time Water Flow Measurement
+
+# Key features
+
+Real-Time Water Flow Measurement
 
 Uses a Hall-effect flow sensor to detect water flow.
 
 Calculates instantaneous flow rate (L/min) and total volume consumed (Liters).
 
-🔹 Time-Stamped Logging with DS3231 RTC
+Time-Stamped Logging with DS3231 RTC
 
 Accurate date and time tracking using the DS3231 real-time clock.
 
 All readings are stored and referenced with timestamps for later processing.
 
-🔹 LCD Display for Live Monitoring
+LCD Display for Live Monitoring
 
-16×2 or 20×4 I²C LCD shows:
+16×2 LCD shows:
 
-Current flow rate
+  1. Current flow rate
 
-Total consumption
+ 2. Total consumption
 
-Date and time
+ 3. Date and time
 
-Alerts or status messages
+ 4. Alerts or status messages
 
-🔹 Configuration via Firmware
-
-Set date/time through the microcontroller firmware (no buttons needed).
-
-User-defined threshold for “High Usage Alert”.
-
-🔹 EEPROM Data Storage
+EEPROM Data Storage
 
 Stores total usage and calibration constant.
 
 Data retained even after reset or power loss.
 
-🔹 Leak / Excess Water Detection
 
-Can detect continuous low flow and notify the user.
-
-Helps identify leaks and wastage.
-
-"Applications"
+# Applications
 
 Residential water usage monitoring
 
@@ -64,8 +55,7 @@ Industrial water consumption management
 Research laboratories and smart city projects
 
 
-
-"System Workflow"
+# System Workflow
 
 Flow sensor generates pulses proportional to water flow
 
@@ -77,9 +67,7 @@ LCD displays the live parameters
 
 Data is stored in EEPROM
 
-Alerts generated based on configured limits
-
-"Future Enhancements"
+# Future Enhancements
 
 Wireless data transmission (LoRa, ESP8266, ESP32)
 
